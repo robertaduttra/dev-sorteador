@@ -5,7 +5,15 @@ function generateNumber() {
   
   const result = Math.floor(Math.random() * (numMax - numMin + 1)) + numMin;
   
-  alert("O número sorteado foi: " + result)
+  if(numMin >= numMax){
+    alert("O valor minimo tem que ser MENOR que o máximo")
+  }else{
+    
+    const result = Math.floor(Math.random() * (numMax - numMin + 1)) + numMin;
+    alert("O número sorteado foi: " + result)
+
+  }
+ 
 }
 
 //mapeando o botao.
